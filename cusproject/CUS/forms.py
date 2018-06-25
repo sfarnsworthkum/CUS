@@ -1,16 +1,13 @@
 from django.forms import ModelForm
-from .models import cusapp
+from .models import Form
 
 
 class cusform(ModelForm):
     class Meta:
-        model = cusapp
+        model = Form
         fields = ['title', 'description', 'location']
 
-class cusform(ModelForm):
-    class Meta:
-        model = cusapp
-        fields = ['title', 'description', 'location']
+
 
 
 

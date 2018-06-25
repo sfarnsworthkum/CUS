@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import cusform
-from .models import cusapp
+from .models import Form
 
 # def homepage(request):
 #     context = {
@@ -29,5 +29,5 @@ def edit_cusapp(request, id=None):
 
 
 def cusapp(request, id=id):
-    cusapp = cusapp.objects.get(id=id)
+    cusapp = Form.objects.all()
     return render(request, 'cusapp/index.html', {'cusapp': cusapp })
